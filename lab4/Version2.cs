@@ -4,9 +4,7 @@ public static class Version2
     {
         string result = "";
         for (int i = n; i >= 1; i--)
-        {
-            result = i + (i < n ? " " : "") + result;
-        }
+            result = i + " " + result;
         return result;
     }
 }

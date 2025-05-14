@@ -7,7 +7,10 @@ public static class Version4
         StringBuilder sb = new StringBuilder();
         for (int i = n; i >= 1; i--)
         {
-            sb.Insert(0, i + (i < n ? " " : ""));
+            if(i<n)
+                sb.Insert(0, i + " ");
+            else
+                sb.Insert(0, i);
         }
         return sb.ToString();
     }
